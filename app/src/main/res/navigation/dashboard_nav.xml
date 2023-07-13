@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav"
+    app:startDestination="@id/cameraPreview">
+
+    <fragment
+        android:id="@+id/cameraPreview"
+        android:name="com.makescreenshot.deletethis.presentation.features.camera.CameraPreviewFragment"
+        android:label="cameraPreview"
+        tools:layout="@layout/fragment_camera_preview" />
+
+    <fragment
+        android:id="@+id/picturePreview"
+        android:name="com.makescreenshot.deletethis.presentation.features.image.PicturePreviewFragment"
+        android:label="picturePreview"
+        tools:layout="@layout/fragment_picture_preview" />
+
+    <fragment
+        android:id="@+id/listOfPictures"
+        android:name="com.makescreenshot.deletethis.presentation.features.image.PicturePreviewFragment"
+        android:label="listOfPictures"
+        tools:layout="@layout/fragment_picture_preview" />
+</navigation>
