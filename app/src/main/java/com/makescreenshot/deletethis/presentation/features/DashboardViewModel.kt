@@ -1,4 +1,4 @@
-package com.makescreenshot.deletethis.presentation
+package com.makescreenshot.deletethis.presentation.features
 
 import com.makescreenshot.deletethis.presentation.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
