@@ -2,7 +2,6 @@ package com.makescreenshot.deletethis.presentation.features
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import com.makescreenshot.deletethis.R
 import com.makescreenshot.deletethis.databinding.ActivityDashboardBinding
 import com.makescreenshot.deletethis.presentation.utils.findNavController

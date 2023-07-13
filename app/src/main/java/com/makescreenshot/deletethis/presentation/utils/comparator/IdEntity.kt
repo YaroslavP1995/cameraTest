@@ -8,7 +8,6 @@ open class IdEntity(open val ids: Int) {
         if (ids != other.ids) return false
         return true
     }
-
     override fun hashCode(): Int {
         return ids
     }

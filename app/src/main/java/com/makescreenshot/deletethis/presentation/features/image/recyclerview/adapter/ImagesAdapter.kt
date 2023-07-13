@@ -4,12 +4,12 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.makescreenshot.deletethis.presentation.utils.response.PhotosListData
 import com.makescreenshot.deletethis.databinding.ItemImagesBinding
 import com.makescreenshot.deletethis.presentation.features.image.recyclerview.viewholder.ShowImagesViewHolder
 import com.makescreenshot.deletethis.presentation.utils.comparator.IntIdComparator
+import com.makescreenshot.deletethis.data.response.PhotosListData
 
-class ImagesAdapter (
+class ImagesAdapter(
     private val onImagePickClick: (PhotosListData) -> Unit,
 ) : ListAdapter<PhotosListData, RecyclerView.ViewHolder>(IntIdComparator<PhotosListData>()) {
 

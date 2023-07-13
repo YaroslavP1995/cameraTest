@@ -4,8 +4,8 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.makescreenshot.deletethis.R
-import com.makescreenshot.deletethis.presentation.utils.response.PhotosListData
 import com.makescreenshot.deletethis.databinding.ItemImagesBinding
+import com.makescreenshot.deletethis.data.response.PhotosListData
 
 class ShowImagesViewHolder(
     private val binding: ItemImagesBinding,
