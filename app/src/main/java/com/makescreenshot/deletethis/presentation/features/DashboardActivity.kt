@@ -25,4 +25,9 @@ class DashboardActivity : AppCompatActivity() {
         navController.setGraph(R.navigation.dashboard_nav)
     }
 
+    override fun onBackPressed() {
+        if (navController.popBackStack().not()) {
+            finish()
+        }
+    }
 }

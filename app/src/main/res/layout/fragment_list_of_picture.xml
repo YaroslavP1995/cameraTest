@@ -17,5 +17,4 @@
         tools:itemCount="10"
         app:spanCount="2"
         tools:listitem="@layout/item_images" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
