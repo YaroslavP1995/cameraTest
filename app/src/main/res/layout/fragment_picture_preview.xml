@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/picture_preview"
@@ -14,4 +15,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
+
+    <Button
+        android:id="@+id/openList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open list"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>

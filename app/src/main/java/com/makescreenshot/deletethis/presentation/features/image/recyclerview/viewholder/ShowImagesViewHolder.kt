@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.makescreenshot.deletethis.R
 import com.makescreenshot.deletethis.databinding.ItemImagesBinding
-import com.makescreenshot.deletethis.data.response.PhotosListData
+import com.makescreenshot.deletethis.data.network.response.PhotosListData
 
 class ShowImagesViewHolder(
     private val binding: ItemImagesBinding,
@@ -35,7 +35,7 @@ class ShowImagesViewHolder(
         placeholder: Int,
     ) {
         Glide.with(into.context)
-            .load(item.path)
+            .load(item.urls?.full)
             .placeholder(placeholder)
             .into(into)
     }

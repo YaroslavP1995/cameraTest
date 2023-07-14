@@ -25,13 +25,13 @@ android {
     buildTypes {
         debug {
             minifyEnabled false
-            buildConfigField "String", "BASE_URL", '"https://api.cards.dev.ut.dp.ua/"'
+            buildConfigField "String", "BASE_URL", '"https://api.unsplash.com/"'
             buildConfigField "boolean", "DEBUG_MODE_ENABLED", 'false'
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"https://api.cards.dev.ut.dp.ua/"'
+            buildConfigField "String", "BASE_URL", '"https://api.unsplash.com/"'
             buildConfigField "boolean", "DEBUG_MODE_ENABLED", 'false'
         }
     }
@@ -88,9 +88,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinStdlibVersion"
 
     implementation "com.google.android.material:material:$materialDesignVersion"
-
-    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$adapterDelgatesVersion"
-    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-layoutcontainer:$adapterDelgatesVersion"
 
     //Glide
 

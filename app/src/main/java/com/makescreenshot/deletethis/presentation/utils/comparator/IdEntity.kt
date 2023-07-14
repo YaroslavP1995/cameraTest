@@ -1,6 +1,6 @@
 package com.makescreenshot.deletethis.presentation.utils.comparator
 
-open class IdEntity(open val ids: Int) {
+open class IdEntity(open val ids: String) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
@@ -9,6 +9,6 @@ open class IdEntity(open val ids: Int) {
         return true
     }
     override fun hashCode(): Int {
-        return ids
+        return ids.hashCode()
     }
 }

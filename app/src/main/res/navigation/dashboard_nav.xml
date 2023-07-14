@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/listOfPictures"
-        android:name="com.makescreenshot.deletethis.presentation.features.image.PicturePreviewFragment"
+        android:name="com.makescreenshot.deletethis.presentation.features.image.ListOfPictureFragment"
         android:label="listOfPictures"
-        tools:layout="@layout/fragment_picture_preview" />
+        tools:layout="@layout/fragment_list_of_picture" />
 </navigation>

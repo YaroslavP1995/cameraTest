@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.makescreenshot.deletethis.databinding.ItemImagesBinding
 import com.makescreenshot.deletethis.presentation.features.image.recyclerview.viewholder.ShowImagesViewHolder
 import com.makescreenshot.deletethis.presentation.utils.comparator.IntIdComparator
-import com.makescreenshot.deletethis.data.response.PhotosListData
+import com.makescreenshot.deletethis.data.network.response.PhotosListData
 
 class ImagesAdapter(
     private val onImagePickClick: (PhotosListData) -> Unit,
@@ -24,11 +24,11 @@ class ImagesAdapter(
         }
     }
 
-    private fun updateImages(newImages: List<PhotosListData>) {
+    private fun updateImages(newImages: List<PhotosListData?>) {
         submitList(newImages)
     }
 
-    fun updateImagesWithScroll(images: List<PhotosListData>, scrollTo: (Int) -> Unit) {
+    fun updateImagesWithScroll(images: List<PhotosListData?>, scrollTo: (Int) -> Unit) {
         updateImages(images)
         scrollTo(0)
     }
